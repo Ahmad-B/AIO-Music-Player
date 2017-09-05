@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" styleClass="background" stylesheets="@mainCSS.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.MainGUIController">
+   <children>
+      <Button layoutX="189.0" layoutY="115.0" mnemonicParsing="false" onAction="#stopClicked" style="-fx-padding: 5 22 5 22;" text="■" />
+      <Button fx:id="play" layoutX="258.0" layoutY="115.0" mnemonicParsing="false" onAction="#playClicked" prefHeight="33.0" prefWidth="70.0" style="-fx-padding: 5 22 5 22;" text="►" />
+      <Button fx:id="trackDB" layoutX="456.0" layoutY="148.0" mnemonicParsing="false" onAction="#trackDBClick" text="Track Database" />
+      <Button layoutX="335.0" layoutY="115.0" mnemonicParsing="false" onAction="#restartClicked" style="-fx-padding: 5 22 5 22;" text="↺" />
+      <Slider fx:id="timeSlider" layoutX="10.0" layoutY="90.0" onMouseClicked="#sliderMoved" onMouseDragged="#sliderMoved" prefHeight="14.0" prefWidth="470.0" />
+      <Slider fx:id="volumeSlider" layoutX="187.0" layoutY="157.0" onMouseClicked="#volumeMoved" onMouseDragged="#volumeMoved" prefHeight="14.0" prefWidth="209.0" />
+      <Label fx:id="time" layoutX="479.0" layoutY="84.0" text="00:00/00:00" />
+      <Label fx:id="cname" contentDisplay="CENTER" layoutX="14.0" layoutY="37.0" prefHeight="27.0" prefWidth="567.0" text="Now playing:" textAlignment="CENTER" />
+      <ImageView fx:id="soundIcon" fitHeight="27.0" fitWidth="33.0" layoutX="277.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="jumpTo" layoutX="11.0" layoutY="146.0" prefHeight="37.0" prefWidth="90.0" promptText="Jump to/Start at" style="-fx-font-size: 10;" />
+      <Button layoutX="108.0" layoutY="148.0" mnemonicParsing="false" onAction="#jumpToTime" prefHeight="33.0" prefWidth="33.0" style="-fx-padding: 5 5 5 5;" text="♪" />
+   </children>
+</AnchorPane>

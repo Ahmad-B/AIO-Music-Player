@@ -1,0 +1,45 @@
+/*
+ *  social gui css file.
+ */
+
+.dialog-pane {
+   -fx-background-color: #3B3737;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+   -fx-font-size: 7pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+     -fx-background-color: #3B3737;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 2em;
+     -fx-background-color: #3B3737;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-color: #3B3737;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+     -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}

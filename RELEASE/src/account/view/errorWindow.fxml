@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.view.errorWindow">
+   <children>
+      <Label fx:id="message" layoutX="8.0" layoutY="14.0" text="a">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeWindow" layoutX="190.0" layoutY="199.0" mnemonicParsing="false" onAction="#closeWindow" text="OK" />
+      <Label fx:id="messageY" layoutX="9.0" layoutY="57.0" text="b">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageZ" layoutX="9.0" layoutY="100.0" text="c">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="message4" layoutX="7.0" layoutY="143.0" text="d">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

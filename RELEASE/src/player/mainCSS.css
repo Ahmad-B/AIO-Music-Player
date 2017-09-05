@@ -1,0 +1,210 @@
+/*
+ *  Stylesheet file.
+ */
+
+.background {
+    -fx-background-color: #3B3737;
+}
+
+.menu-button, .menu-item, .context-menu {
+    -fx-background-color: #3B3737;
+}
+
+.label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+#title {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Myriad Pro";
+    -fx-text-fill: white;    
+}
+
+#titleEdit {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Myriad Pro";
+    -fx-text-fill: white; 
+    -fx-background-color: #3B3737;
+}
+
+#titleEdit:focused {
+    -fx-font-size: 26pt;
+    -fx-background-color: #3B3737;
+}
+
+.table-view {
+    -fx-base: #3B3737;
+    -fx-control-inner-background: #3B3737;
+    -fx-background-color: #3B3737;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header.add {
+        -fx-border-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: grey;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#3B3737,20%);
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+/* rounded search field */
+#search {
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button {
+    -fx-padding: 5 10 5 10;  
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-color: #3B3737;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+/* makes add button round */
+.button#addButton {
+    -fx-padding: 0 0 0 0;   
+    -fx-background-radius: 15, 15;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+}
+
+.button:hover {
+    -fx-background-color: green;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.list-view {
+    -fx-base: #3B3737;
+    -fx-control-inner-background: #3B3737;
+    -fx-background-color: #3B3737;
+    -fx-padding: 5;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-border-radius: 15;
+}
+
+.list-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.list-view .label {
+    -fx-font-size: 24pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+/* The main scrollbar **track** CSS class  */
+.list-view .scroll-bar:horizontal .track,
+.list-view .scroll-bar:vertical .track{
+	-fx-background-color:transparent;
+	-fx-border-color:transparent;
+	-fx-background-radius: 0em;
+	-fx-border-radius:2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.list-view .scroll-bar:horizontal .increment-button ,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+	-fx-padding:0 0 10 0;
+
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+
+.list-view .scroll-bar:vertical .increment-button ,
+.list-view .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+	-fx-padding:0 10 0 0;
+
+}
+
+.list-view  .scroll-bar .increment-arrow,
+.list-view  .scroll-bar .decrement-arrow
+ {
+	-fx-shape: " ";	
+	-fx-padding:0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.list-view .scroll-bar:horizontal .thumb,
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+.choicebox {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11;
+    -fx-mark-color: green ;
+    -fx-background-color: #3B3737;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.choicebox .menu-item:focused {
+  -fx-background-color: green ;
+  -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  -fx-font-size: 11;
+}

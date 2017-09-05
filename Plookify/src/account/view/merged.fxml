@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.44648829431438125" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="883.0" style="-fx-background-color: #3b3737;" stylesheets="@../../common/gui/mainCSS.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.view.merged">
+  <items>
+    <AnchorPane fx:id="loginPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label layoutX="153.0" layoutY="36.0" text="Login" />
+            <Label layoutX="25.0" layoutY="82.0" text="Username:" />
+            <Label layoutX="27.0" layoutY="119.0" text="Password:" />
+            <PasswordField fx:id="loginPass" layoutX="156.0" layoutY="114.0" />
+            <TextField fx:id="loginUser" layoutX="156.0" layoutY="77.0" />
+            <Button fx:id="loginSubmit" layoutX="51.0" layoutY="163.0" mnemonicParsing="false" onAction="#login" text="Submit" />
+            <Button fx:id="loginClear" layoutX="215.0" layoutY="163.0" mnemonicParsing="false" onAction="#clearLogin" text="Clear" />
+            <Button fx:id="forgot" layoutX="98.0" layoutY="226.0" mnemonicParsing="false" text="Forgot Password" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="createPane" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="447.0">
+         <children>
+            <Label layoutX="156.0" layoutY="26.0" text="Create Account" />
+            <Label layoutX="30.0" layoutY="91.0" text="Enter Username:" />
+            <Label layoutX="24.0" layoutY="126.0" text="Enter Password:" />
+            <Label layoutX="24.0" layoutY="171.0" text="Re-enter Password:" />
+            <Label layoutX="23.0" layoutY="284.0" text="Enter Address Line 1:" />
+            <Label layoutX="25.0" layoutY="319.0" text="Enter Postcode:" />
+            <Label layoutX="26.0" layoutY="356.0" text="Enter Contact Number:" />
+            <Label layoutX="26.0" layoutY="393.0" text="Enter Contact Email:" />
+            <PasswordField fx:id="createPass" layoutX="253.0" layoutY="121.0" />
+            <PasswordField fx:id="reenter" layoutX="253.0" layoutY="166.0" />
+            <TextField fx:id="createUser" layoutX="253.0" layoutY="86.0" />
+            <TextField fx:id="address" layoutX="253.0" layoutY="279.0" />
+            <TextField fx:id="postcode" layoutX="253.0" layoutY="314.0" />
+            <TextField fx:id="number" layoutX="253.0" layoutY="351.0" />
+            <TextField fx:id="email" layoutX="253.0" layoutY="388.0" />
+            <Button fx:id="createSubmit" layoutX="52.0" layoutY="490.0" mnemonicParsing="false" onAction="#createAccount" text="Submit" />
+            <Button fx:id="createClear" layoutX="337.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearCreate" text="Clear" />
+            <TextField fx:id="reenterEmail" layoutX="253.0" layoutY="426.0" />
+            <Label layoutX="25.0" layoutY="431.0" text="Re-enter Email Address:" />
+            <TextField fx:id="sur" layoutX="253.0" layoutY="245.0" />
+            <TextField fx:id="first" layoutX="253.0" layoutY="203.0" />
+            <Label layoutX="25.0" layoutY="208.0" text="First Name:" />
+            <Label layoutX="26.0" layoutY="250.0" text="Surname:" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

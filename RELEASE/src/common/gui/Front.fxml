@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1247.0" stylesheets="@mainCSS.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.gui.FrontController">
+   <children>
+      <AnchorPane layoutX="-22.0" layoutY="-39.0" prefHeight="694.0" prefWidth="1274.0">
+         <children>
+            <Pane fx:id="player" layoutX="339.0" layoutY="502.0" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: #3d3d3d;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@empty.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="social" layoutX="947.0" layoutY="211.0" prefHeight="491.0" prefWidth="315.0" style="-fx-background-color: #3d3d3d;" />
+            <TableView fx:id="playlistNames" focusTraversable="false" layoutX="30.0" layoutY="97.0" onMouseClicked="#onClick" prefHeight="226.0" prefWidth="300.0">
+              <placeholder>
+                <Label text="You have no playlists create one now" />                   
+              </placeholder>
+              <columns>
+                <TableColumn fx:id="playlistName" editable="false" minWidth="166.0" prefWidth="274.0" resizable="false" sortable="false" text="Playlists" />
+              </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Pane layoutX="947.0" layoutY="161.0" prefHeight="42.0" prefWidth="315.0" style="-fx-background-color: #3d3d3d;">
+               <children>
+                  <Label id="title" layoutY="-7.0" prefHeight="55.0" prefWidth="315.0" style="-fx-alignment: center;" stylesheets="@mainCSS.css" text="Social" />
+               </children>
+            </Pane>
+            <Pane fx:id="current" layoutX="339.0" layoutY="96.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3d3d3d;" />
+            <Button layoutX="52.0" layoutY="634.0" mnemonicParsing="false" onAction="#trackClick" prefHeight="33.0" prefWidth="258.0" text="View song viewer / now playing">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane layoutX="947.0" layoutY="96.0" prefHeight="48.0" prefWidth="315.0" style="-fx-background-color: #3d3d3d;">
+               <children>
+                  <Label alignment="CENTER" layoutX="1.0" layoutY="-4.0" prefHeight="55.0" prefWidth="315.0" stylesheets="@mainCSS.css" text="Radio Generator" />
+                  <Button id="radioButton" layoutX="16.0" mnemonicParsing="false" onAction="#radioClick" prefHeight="48.0" prefWidth="52.0" stylesheets="@mainCSS.css" text=" ">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+            <TableView fx:id="friendsPlaylists" focusTraversable="false" layoutX="32.0" layoutY="389.0" onMouseClicked="#onFriendClick" prefHeight="242.0" prefWidth="300.0">
+               <columns>
+                  <TableColumn fx:id="friendsPNames" editable="false" minWidth="166.0" prefWidth="274.0" resizable="false" sortable="false" text="Friends Playlists" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Pane fx:id="accountBar" layoutX="339.0" layoutY="46.0" prefHeight="45.0" prefWidth="923.0" style="-fx-background-color: #3b3737;">
+               <children>
+                  <Button fx:id="username" layoutX="795.0" layoutY="6.0" mnemonicParsing="false" onAction="#accountDetails" text="Username" />
+               </children></Pane>
+            <Button id="addButton" fx:id="create" layoutX="212.0" layoutY="343.0" mnemonicParsing="false" onAction="#createPlaylistClick" prefHeight="33.0" prefWidth="118.0" text="Create Playlist">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="createPlaylist" layoutX="32.0" layoutY="343.0" prefHeight="32.0" prefWidth="172.0" promptText="Playlist Name" />
+            <ImageView fx:id="logo" fitHeight="45.0" fitWidth="300.0" layoutX="32.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="53.0" layoutY="669.0" mnemonicParsing="false" onAction="#trackClose" text="Close song viewer / now playing">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

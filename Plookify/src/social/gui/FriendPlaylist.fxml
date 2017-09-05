@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="315.0" styleClass="background" stylesheets="@social.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social.gui.FriendPlaylistController">
+   <children>
+      <Pane prefHeight="347.0" prefWidth="315.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="friendName" layoutY="27.0" onMouseClicked="#handleSelectfriend" prefHeight="76.0" prefWidth="315.0" stylesheets="@social.css">
+              <columns>
+                <TableColumn fx:id="showFriendName" prefWidth="144.0" text="Search Name" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <TableView fx:id="playlists" layoutY="106.0" onMouseClicked="#handleSelectplaylist" prefHeight="241.0" prefWidth="152.0">
+              <columns>
+                <TableColumn fx:id="showPlaylists" prefWidth="151.0" text="Playlist " />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <TableView fx:id="tracks" layoutX="155.0" layoutY="106.0" prefHeight="241.0" prefWidth="160.0">
+              <columns>
+                <TableColumn fx:id="showTracksName" prefWidth="75.0" text="Song" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <TextField id="socialsearch" fx:id="searchName" layoutY="1.0" onKeyReleased="#search" prefHeight="15.0" prefWidth="195.0" promptText="Search Name" stylesheets="@social.css" />
+            <Separator layoutX="2.0" layoutY="102.0" prefHeight="2.0" prefWidth="307.0" />
+            <Separator layoutX="152.0" layoutY="106.0" orientation="VERTICAL" prefHeight="241.0" prefWidth="1.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

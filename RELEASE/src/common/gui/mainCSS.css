@@ -1,0 +1,143 @@
+/*
+ *  Stylesheet file.
+ */
+
+#AnchorPane {
+    -fx-background-color: #2d2d2d;
+}
+.pane {
+    -fx-background-color: #3B3737;
+}
+
+.menu-button, .menu-item, .context-menu {
+    -fx-background-color: #3B3737;
+}
+#radioButton {
+    -fx-background-image: url('http://www.ignitionlive.co.za/wp-content/uploads/2014/07/radio_icon_white.png');
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%; 
+    -fx-border-color: #3d3d3d;
+    -fx-background-color: #3d3d3d;
+    -fx-padding: 0 0 0 0;   
+    -fx-background-radius: 15, 15;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+}
+#radioButton:hover {
+    -fx-background-color: green;
+}
+.label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+#title {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Myriad Pro";
+    -fx-text-fill: white;    
+}
+
+#titleEdit {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Myriad Pro";
+    -fx-text-fill: white; 
+    -fx-background-color: #3B3737;
+}
+
+#titleEdit:focused {
+    -fx-font-size: 26pt;
+    -fx-background-color: #3B3737;
+}
+
+.table-view {
+    -fx-base: #3B3737;
+    -fx-control-inner-background: #3B3737;
+    -fx-background-color: #3B3737;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: grey;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#3B3737,20%);
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+#search {
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-color: #3B3737;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+/* makes add button round */
+.button#addButton {
+    -fx-padding: 0 0 0 0;   
+    -fx-background-radius: 15, 15;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+}
+
+.button:hover {
+    -fx-background-color: green;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}

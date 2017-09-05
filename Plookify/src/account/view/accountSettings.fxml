@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="accountSettings" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3b3737;" stylesheets="@../../common/gui/mainCSS.css" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.view.accountSettings">
+   <children>
+      <Label fx:id="device1" layoutX="39.0" layoutY="40.0" prefHeight="35.0" prefWidth="189.0" text="No Device" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="device2" layoutX="39.0" layoutY="75.0" prefHeight="35.0" prefWidth="189.0" text="No Device" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="device3" layoutX="39.0" layoutY="110.0" prefHeight="35.0" prefWidth="189.0" text="No Device" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="device4" layoutX="39.0" layoutY="145.0" prefHeight="35.0" prefWidth="189.0" text="No Device" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="device5" layoutX="39.0" layoutY="183.0" prefHeight="35.0" prefWidth="189.0" text="No Device" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="40.0" text="1" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="75.0" text="2" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="110.0" text="3" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="145.0" text="4" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="183.0" text="5" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="27.0" layoutY="259.0" mnemonicParsing="false" onAction="#closeAccount" onMouseClicked="#closeAccount" text="Close Account" />
+      <Button fx:id="upgrade" layoutX="174.0" layoutY="259.0" mnemonicParsing="false" onAction="#change" text="Payment Options" />
+      <Button fx:id="button1" layoutX="228.0" layoutY="45.0" mnemonicParsing="false" onAction="#addDevice1" text="Add/Replace" />
+      <Button fx:id="button2" layoutX="228.0" layoutY="80.0" mnemonicParsing="false" onAction="#addDevice2" text="Add/Replace" />
+      <Button fx:id="button3" layoutX="228.0" layoutY="115.0" mnemonicParsing="false" onAction="#addDevice3" text="Add/Replace" />
+      <Button fx:id="button4" layoutX="228.0" layoutY="150.0" mnemonicParsing="false" onAction="#addDevice4" text="Add/Replace" />
+      <Button fx:id="button5" layoutX="228.0" layoutY="188.0" mnemonicParsing="false" onAction="#addDevice5" text="Add/Replace" />
+      <Label layoutX="20.0" layoutY="311.0" text="Last Replaced Date:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="241.0" layoutY="311.0" text="DATE" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="update1" layoutX="318.0" layoutY="45.0" prefHeight="25.0" prefWidth="84.0" visible="false" />
+      <TextField fx:id="update2" layoutX="318.0" layoutY="80.0" prefHeight="25.0" prefWidth="84.0" visible="false" />
+      <TextField fx:id="update3" layoutX="318.0" layoutY="115.0" prefHeight="25.0" prefWidth="84.0" visible="false" />
+      <TextField fx:id="update4" layoutX="318.0" layoutY="150.0" prefHeight="25.0" prefWidth="84.0" visible="false" />
+      <TextField fx:id="update5" layoutX="318.0" layoutY="188.0" prefHeight="25.0" prefWidth="84.0" visible="false" />
+      <Button fx:id="confirm1" layoutX="432.0" layoutY="45.0" mnemonicParsing="false" onAction="#confirmed1" text="Confirm" visible="false" />
+      <Button fx:id="confirm2" layoutX="432.0" layoutY="80.0" mnemonicParsing="false" onAction="#confirmed2" text="Confirm" visible="false" />
+      <Button fx:id="confirm3" layoutX="432.0" layoutY="115.0" mnemonicParsing="false" onAction="#confirmed3" text="Confirm" visible="false" />
+      <Button fx:id="confirm4" layoutX="432.0" layoutY="150.0" mnemonicParsing="false" onAction="#confirmed4" text="Confirm" visible="false" />
+      <Button fx:id="confirm5" layoutX="432.0" layoutY="188.0" mnemonicParsing="false" onAction="#confirmed5" text="Confirm" visible="false" />
+      <Button fx:id="logout" layoutX="338.0" layoutY="259.0" mnemonicParsing="false" onAction="#signout" text="Logout" />
+   </children>
+</Pane>
